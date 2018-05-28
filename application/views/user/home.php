@@ -6,7 +6,7 @@
 </head>	
 
 
-<div class="main">
+<div class="home">
 	<div class="form_login">
 		<form class="login" action="" method="POST">
 			<input type="hidden" name="form" value="1">
@@ -47,9 +47,9 @@
 			<p class="qwe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
 			<div class="row">
 	    		<?php 
-	    		    for($i=0;$i<3;$i++){
+	    		    for($i=0;$i<4;$i++){
 	    		 ?>
-				<div class="col-md-4 ">
+				<div class="col-md-3 ">
 					<div class="component">
 						<div class="hover"></div>
 						<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
@@ -71,9 +71,9 @@
 			<p class="qwe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
 			<div class="row">
 				<?php 
-				    for($i=0;$i<3;$i++){
+				    for($i=0;$i<4;$i++){
 				 ?>
-				<div class="col-md-4 ">
+				<div class="col-md-3 ">
 					<div class="component">
 						<div class="hover"></div>
 						<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
@@ -88,4 +88,5 @@
 			</div>
 	    </div>
 	</div>
+	<?php include("footer.php"); ?>
 </div>

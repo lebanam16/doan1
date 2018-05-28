@@ -1,0 +1,38 @@
+.footer {
+    background-color: lightblue;
+    padding-bottom: 25px;
+}
+
+.footer .add , .footer .info {
+    margin-top: 23px;
+}
+
+.footer span.title {
+    font-weight: 700;
+    font-size: 23px;
+}
+
+.footer .add .list {
+    display: block;
+    margin: 10px 0px 15px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-left: solid 13px #ffa633;
+    line-height: 13px;
+    padding-left: 9px;
+}
+
+.footer .info .list {
+    display: block;
+    vertical-align: middle;
+    padding: 10px 0px 0px 5px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #e8b829;
+}
+
+.footer .info i {
+    vertical-align: middle;
+    font-size: 20px;
+    color:  orange;
+}

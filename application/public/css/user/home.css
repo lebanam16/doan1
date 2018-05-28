@@ -1,4 +1,4 @@
- .main {
+ .home {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/khaihoanmon.jpg");
     background-color: black;
     height: 100%;
@@ -9,38 +9,47 @@
     background-size: cover;
 }
 
-.intro {
+.home .intro {
     padding-bottom: 90px;
 }
 
-p.title {
-    margin:  auto;
-    text-align:  center;
-    padding: 15px 0px;
-    display:  block;
-    width: 496px;
-}
-
-.tour hr {
+.home .tour hr {
     width: 150px;
     border: 2px solid orange;
     margin:  auto;
 }
 
-h3.title {
-    text-align:  center;
-    font-size: 40px;
-    font-weight: 500;
-    padding-top: 27px;
-    padding-bottom: 19px;
+
+/*kkkkk*/
+.home .title h1 {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin-top: 170px;
 }
 
-.mountain {
+.home .title p{
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 19px 0px 40px 0px;
+}
+
+.home .title button {
+    padding: 10px 45px;
+    border: none;
+    color: white;
+    background-color: #00bcd4;
+    margin-left: 471px;
+    margin-bottom: 194px;
+}
+
+.home .mountain {
     background-color: #f2f1ee;
 }
 
 
-h3.qwe {
+.home h3.qwe {
     text-align: center;
     font-size: 34px;
     padding-top: 20px;
@@ -48,50 +57,55 @@ h3.qwe {
 }
 
 
-p.qwe {
+.home p.qwe {
     text-align: center;
-    padding: 20px 0px 65px 0px;
+    padding: 20px 0px 25px 0px;
     width: 33%;
     margin: auto;
 }
 
-h4.content , p.content {
+.home h4.content ,.home  p.content {
     text-align: center;
 }
 
-.component {
+.home p.content {
+    padding:0px 5px 5px 5px;
+}
+
+.home .component {
     background-color: #eef1f2;
     position: relative;
     transition: 0.8s;
+    margin-bottom: 31px;
 }
 
-.component img {
+.home .component img {
     width: 100%;
 }
 
-.component:hover .hover{
+.home .component:hover .hover{
     opacity: 1;
 }
 
-.component:hover {
+.home .component:hover {
     transform: scale(1.05);
 }
 
-.hover {
+.home .hover {
     width: 100%;
     position: absolute;
     background-color: #ffffff8a;
-    height: 197px;
+    height: 144px;
     opacity: 0;
 }
 
-.tour a img {
+.home .tour a img {
     height: 33px;
     position: absolute;
     z-index: 2;
 }
 
-i.material-icons.left {
+.home i.material-icons.left {
     z-index: 1;
     position: absolute;
     left: 15px;
@@ -103,15 +117,15 @@ i.material-icons.left {
 
 
 
-
-.form_login, .form_signup {
+/*phan hien thi form dang nhap*/
+.home .form_login,.home  .form_signup {
     position: absolute;
     width: 26%;
     top:140px;
     right: 27px;
     z-index: 2;
 }
-.signup button {
+.home .signup button {
     padding: 10px 110px;
     margin-left: 25px;
     border:  none;
@@ -121,7 +135,7 @@ i.material-icons.left {
     margin-top:  20px;
 }
 
-.signup input[type="submit"] {
+.home .signup input[type="submit"] {
     padding: 10px 122px;
     margin-left: 25px;
     border:  none;
@@ -130,7 +144,7 @@ i.material-icons.left {
     color:  white;
 }
 
-.login button {
+.home .login button {
     padding: 10px 83px;
     margin-left: 25px;
     border:  none;
@@ -140,7 +154,7 @@ i.material-icons.left {
     margin-top:  20px;
 }
 
-.login input[type="submit"] {
+.home .login input[type="submit"] {
     padding: 10px 110px;
     margin-left: 25px;
     border:  none;
@@ -149,34 +163,34 @@ i.material-icons.left {
     color:  white;
 }
 
-button:hover {
+.home button:hover {
     background-color: #e2dada;
 }
 
-input[type="submit"]:hover {
+.home input[type="submit"]:hover {
     background-color: #093a0d;
 }
 
-.checkbox {
+.home .checkbox {
     margin-left: 45px;
 }
 
-input[type="checkbox"] {
+.home input[type="checkbox"] {
     padding: 20px 20px;
 }
 
-.form_login form {
+.home .form_login form {
     background-color: #03a9f42e;
     padding: 0px 0px 18px 0px;
     border: 1px solid lightblue;
     border-radius: 10px;
 }
 
-.signup {
+.home .signup {
     margin-top: 20px;
 }
 
-input[type="password"] {
+.home input[type="password"] {
     margin: 7px 25px;
     height: 35px;
     width: 290px;
@@ -185,44 +199,44 @@ input[type="password"] {
     padding-left: 35px;
 }
 
-.username {
+.home .username {
     position: relative;
 }
 
-.password {
+.home .password {
     position: relative;
 }
 
-.email {
+.home .email {
     position: relative;
 }
 
-.fullname {
+.home .fullname {
     position: relative;
 }
 
-.passwordconfirm {
+.home .passwordconfirm {
     position: relative;
 }
 
-img.icon-input {
+.home img.icon-input {
     position:  absolute;
     top: 18px;
     left: 35px;
 }
 
-img.peek-password {
+.home img.peek-password {
     position: absolute;
     top: 19px;
     left: 290px;
 }
 
-.forget {
+.home .forget {
     margin-left: 27px;
     margin-top: 20px;
 }
 
-.form_login h1 {
+.home .form_login h1 {
     text-align: center;
     color:white;
 }

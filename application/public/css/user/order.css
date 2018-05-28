@@ -1,0 +1,121 @@
+.order .block {
+    border-bottom: 3px solid #58584a4f;
+    margin-bottom: 10px;
+}
+
+.order .detail {
+	/*width: 76%;
+	display: inline-bloc*/k;
+	border-right: 3px solid #58584a4f;
+	margin-top: 10px;
+	margin-bottom:  10px;
+}
+
+
+/*title-block*/
+.order .detail .title-block {
+	font-size: 16px;
+	vertical-align: middle;
+	background-color:  palegreen;
+	margin: 0px 7px 10px 0px;
+	padding: 5px;
+}
+
+.order .detail .title-block i {
+	vertical-align: middle;
+	color: #2f1c15;
+	font-size: 21px;
+	padding-bottom: 2px;
+}
+
+/*content*/
+
+.order .content .tour-img {
+	display: inline-block;
+	width: 59%;
+	background-color: red;
+	float:  left;
+}
+
+.order .content .tour-img img {
+	width: 100%;
+	height: 282px;
+	object-fit: cover;
+}
+
+.order .content .cost {
+	width: 40%;
+	display: inline-block;
+	float:  right;
+}
+
+.order .content .cost span.title {
+	font-size: 25px;
+	font-weight: 700;
+	display: block;
+	padding: 10px 0px 4px 0px;
+}
+
+.order .content .cost span.info {
+    display: block;
+    font-size: 19px;
+    padding-bottom:10px;
+}
+
+.order .content .cost span.button {
+    background-color: mediumpurple;
+    padding: 10px 37px;
+    border-radius: 3px;
+    font-size: 16px;
+    color: white;
+    margin-left: 50%;
+    cursor: pointer;
+}
+
+.order .content .cost span.button:hover {
+	background-color: #503092;
+}
+
+.order .weather {
+	/*width: 23%;*/
+	/*display: inline-block;*/
+	margin-top: 10px;
+	overflow-y: scroll;
+	overflow-x:  hidden;
+	height: 348px;
+}
+
+#scroll::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+} 
+
+#scroll::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+
+.order .intro {
+	clear: both;
+}
+
+.order .intro .menu {
+    border-bottom: 1px solid #58584a4f;
+    padding-top: 10px;
+    height: 46px;
+    margin-bottom: 14px;
+}
+
+.order .intro .menu span {
+	font-size: 14px;
+	background-color: #e1e1e1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.order .intro .menu .active {
+	background-color: #008fea;
+}
+
+.order .intro .contain span {
+	font-size: 16px;
+}

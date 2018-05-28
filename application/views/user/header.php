@@ -12,7 +12,7 @@
       rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/user/header.css") ?>">
 	</head>
-	
+	<div class="header">
 		<div class="fix">
 			<div class="info">
 				<div class="container">
@@ -41,5 +41,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
+		
 	
 </html>
