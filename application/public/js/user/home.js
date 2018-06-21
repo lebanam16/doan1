@@ -91,16 +91,16 @@ $(document).ready(function() {
 	});
 
 	//khi click logout
-	// $(document).on("click",$(".header .logout"),function (e) {
-	// 	e.preventDefault();
-	// 	var url = "http://localhost/doan1/index.php/user/Home/logout"
-     //    $.ajax({
-     //        url     : url,
-     //        type    : "POST",
-     //        success : function () {
-     //            window.location.reload();
-     //        }
-     //    });
-    // })
+	$(document).on("click",".header button.logout",function (e) {
+		e.preventDefault();
+		var url = "http://localhost/doan1/index.php/user/Home/logout"
+        $.ajax({
+            url     : url,
+            type    : "POST",
+            success : function () {
+                window.location.reload();
+            }
+        });
+    })
 
 });
