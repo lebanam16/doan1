@@ -115,6 +115,12 @@
     padding: 6px
 }
 
+.home p.warning {
+    color: red;
+    text-align: center;
+}
+
+
 
 
 /*phan hien thi form dang nhap*/
@@ -154,6 +160,10 @@
     margin-top:  20px;
 }
 
+.home .signupbutton {
+    padding: 10px 120px ! important;
+}
+
 .home .login input[type="submit"] {
     padding: 10px 110px;
     margin-left: 25px;
@@ -179,11 +189,10 @@
     padding: 20px 20px;
 }
 
-.home .form_login form {
+.home .form_login form , .home .form_signup form {
     background-color: #03a9f42e;
     padding: 0px 0px 18px 0px;
     border: 1px solid lightblue;
-    border-radius: 10px;
 }
 
 .home .signup {
@@ -236,9 +245,32 @@
     margin-top: 20px;
 }
 
-.home .form_login h1 {
+.home .form_login h1, .home .form_signup h1 {
     text-align: center;
     color:white;
 }
 
 
+input[type="text"] {
+    margin: 7px 25px;
+    height: 35px;
+    width: 290px;
+    border-radius: 4px;
+    border:  solid 1px lightblue;
+    padding-left: 35px;
+}
+
+.home form .close {
+    padding: 0px 29px 3px 29px;
+    background-color: red;
+    opacity: 0.8;
+    vertical-align: middle;
+    font-size: 17px;
+    border-radius: 0px;
+    margin-top: 0px;
+    color: white;
+}
+
+.home form .close:hover {
+    opacity: 1;
+}

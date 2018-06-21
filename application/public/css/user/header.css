@@ -39,6 +39,15 @@
     color: white;
 }
 
+.header .menu li i {
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.header .menu li span {
+    vertical-align: middle;
+}
+
 .header .menu li:hover {
     background-color: #2590b3;
 }
@@ -46,7 +55,7 @@
 .header div.search {
     position: absolute;
     top: -6px;
-    right: 250px;
+    right: 350px;
 }
 
 .header input[type="text"] {
@@ -68,9 +77,36 @@
     margin-bottom: 194px;
 }
 
+.header .profile {
+    float: right;
+    width: 230px;
+}
+
 .header .profile img {
     height: 37px;
-    position: absolute;
     right: 117px;
     top: 8px;
+}
+
+.header .name {
+    font-size: 16px;
+    color: white;
+    text-align: right;
+}
+
+.header .logout {
+    margin-top: 10px;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    color: white;
+    float: right;
+    padding: 5px 10px;
+    margin-right: 109px;
+    font-weight: 900;
+}
+
+.header .logout:hover {
+    opacity: 0.8;
 }

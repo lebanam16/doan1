@@ -22,7 +22,7 @@
 			<div class="menu">
 				<div class="container">
 					<ul>
-						<li> Page </li>
+						<li><i class="material-icons">home</i> <span>Trang chủ </span></li>
 						<li> Page </li>
 						<li> Page </li>
 						<li> Page </li>
@@ -32,14 +32,16 @@
 					        <div class="form-group">
 					          <input type="text" class="form-control" placeholder="Search">
 					        </div>
-					        <button type="submit" class="btn btn-default">Submit</button>
+					        <button type="submit" class="btn btn-default"><i class="material-icons">search</i></button>
 					    </form>
 					</div>
 					<div class="profile">
 						<img class="img-circle" src="<?php echo base_url("public/img/icon/profile.png"); ?>" alt="">
+						<span class="name"><?php if(isset($_SESSION["name"])) echo $_SESSION["name"];?></span>
 					</div>
 				</div>
 			</div>
+            <button class="logout">Log out</button>
 		</div>
 	</div>
 		

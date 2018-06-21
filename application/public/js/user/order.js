@@ -18,4 +18,42 @@ $(document).ready(function() {
 		$(".contain  #"+currentId).show();
 	});
 
+// slide show
+
+    var i=1;
+	// dem so luong slide
+	var mySlideCount = $(".tour-img").children('.mySlide').length;
+	//show slide cp class active mac dinh
+	$(".tour-img .active").show();
+	var currentImg = $(".tour-img .active");
+
+	var slides = document.getElementsByClassName("mySlide");
+
+    //khi click nut right
+	$(".content .tour-img i.right").click(function(event) {
+		if(i<mySlideCount){
+			$(".tour-img .active").removeClass('active').hide().next().addClass('active').show();
+			i++;
+		}
+		else {
+			return;
+		}
+	});
+
+	//khi click nut left
+	$(".content .tour-img i.left").click(function(event) {
+		if(i>1){
+			$(".tour-img .active").removeClass('active').hide().prev().addClass('active').show();
+			i--;
+		}
+		else {
+			return;
+		}
+	});
+
 });
+
+// slides[i].style.display = "none";
+// dots[slideIndex-1].className += " active";
+
+ // dots[i].className = dots[i].className.replace(" active", "");

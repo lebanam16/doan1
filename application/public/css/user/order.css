@@ -5,7 +5,7 @@
 
 .order .detail {
 	/*width: 76%;
-	display: inline-bloc*/k;
+	display: inline-bloc*/;
 	border-right: 3px solid #58584a4f;
 	margin-top: 10px;
 	margin-bottom:  10px;
@@ -23,7 +23,7 @@
 
 .order .detail .title-block i {
 	vertical-align: middle;
-	color: #2f1c15;
+	color: #337ab7;
 	font-size: 21px;
 	padding-bottom: 2px;
 }
@@ -33,14 +33,54 @@
 .order .content .tour-img {
 	display: inline-block;
 	width: 59%;
-	background-color: red;
 	float:  left;
+	position: relative;
+}
+
+.order .content .tour-img i{
+    position: absolute;
+    top: 116px;
+    color: white;
+    background-color: #ffffff82;
+    padding: 12px 6px;
+    border-radius: 2px;
+}
+
+.order .content .tour-img i:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
+.order .content .tour-img i.right {
+	right: 0px;
+}
+
+.order .content .tour-img .mySlide {
+	display: none;
 }
 
 .order .content .tour-img img {
 	width: 100%;
 	height: 282px;
 	object-fit: cover;
+}
+
+/* Fading animation */
+.effect {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+  animation-name: fade;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 .order .content .cost {
@@ -99,10 +139,9 @@
 }
 
 .order .intro .menu {
-    border-bottom: 1px solid #58584a4f;
     padding-top: 10px;
     height: 46px;
-    margin-bottom: 14px;
+    margin-bottom: -8px;
 }
 
 .order .intro .menu span {
@@ -116,6 +155,24 @@
 	background-color: #008fea;
 }
 
+.order .intro .contain {
+    border: 1px solid #58584a4f;
+    padding: 10px 20px 20px 20px;
+}
+
 .order .intro .contain span {
 	font-size: 16px;
+	display:  block;
+}
+
+.order .intro .contain img {
+    text-align: center;
+    width: 100%;
+    height: 317px;
+    object-fit: cover;
+    padding: 20px 0px;
+}
+
+.order .intro .component {
+	border-bottom: 1px solid #58584a4f;
 }
