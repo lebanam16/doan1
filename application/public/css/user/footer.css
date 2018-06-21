@@ -1,5 +1,7 @@
 .footer {
-    background-color: lightblue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("../../img/hoahong.jpg");
+    background-size: cover;
+    background-color: #2a2a2a;
     padding-bottom: 25px;
 }
 
@@ -8,7 +10,8 @@
 }
 
 .footer span.title {
-    font-weight: 700;
+    color: white;
+    font-weight: 600;
     font-size: 23px;
 }
 

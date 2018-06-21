@@ -8,12 +8,25 @@ class Home extends CI_Controller {
         parent::__construct();
         $this->load->helper('url');
         $this->load->model("user/M_home");
-        session_start();
     }
 
     public function index() {
         $this->load->view("user/home");
     }
+
+    public function ajax_tour(){
+        $data['tour'] = $this->M_home->get_group();
+        $data['tieu_de'] = $data['tour']['0']['ten'];
+        $data['mo_ta'] = $data['tour']['0']['mo_ta'];
+        $html = $this->load->view("user/tour",$data);
+        return $html;
+    }
+
+
+
+
+
+
 
     public function login() {
         $data = $this->input->post();

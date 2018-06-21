@@ -95,16 +95,16 @@
 }
 
 .header .logout {
-    margin-top: 10px;
     background-color: blue;
     border: none;
     border-radius: 3px;
     font-size: 12px;
     color: white;
     float: right;
-    padding: 5px 10px;
-    margin-right: 109px;
+    padding: 6px 10px;
     font-weight: 900;
+    margin-top: -40px;
+    margin-right: 36px;
 }
 
 .header .logout:hover {

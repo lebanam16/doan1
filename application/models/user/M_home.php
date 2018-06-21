@@ -2,6 +2,26 @@
 
 
 class M_home extends CI_Model {
+
+    // lay tour
+    public function get_group(){
+        $this->db->select('*');
+        $this->db->limit(4);
+        $this->db->from('nhom');
+        $this->db->where("nhom.id=1");
+        $this->db->join('tour', 'tour.nhom = nhom.id');
+        $query = $this->db->get()->result_array();
+        return $query;
+    }
+
+    public function get_data_table(){
+        $this->db->select("id");
+        $this->db->limit(2);
+        $query = $this->db->get("nhom");
+        return $query;
+    }
+
+
     public function signup($data) {
         $param = array(
             'ho_ten'   => $data['fullname'],

@@ -19,6 +19,7 @@
 	background-color:  palegreen;
 	margin: 0px 7px 10px 0px;
 	padding: 5px;
+	border-left: solid yellow 5px;
 }
 
 .order .detail .title-block i {

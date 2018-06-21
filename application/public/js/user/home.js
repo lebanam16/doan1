@@ -103,4 +103,8 @@ $(document).ready(function() {
         });
     })
 
+    $(document).on("click",".home .component",function () {
+        var url = $(this).attr("url-order");
+        window.location.replace(url);
+    })
 });

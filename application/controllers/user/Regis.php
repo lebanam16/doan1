@@ -2,7 +2,7 @@
 /**
  *
  */
-class Order extends CI_Controller
+class Regis extends CI_Controller
 {
     function __construct()
     {
@@ -11,7 +11,7 @@ class Order extends CI_Controller
     }
     public function index()
     {
-        $this->load->view("user/order");
+        $this->load->view("user/registration");
     }
 }
 

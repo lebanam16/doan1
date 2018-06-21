@@ -1,9 +1,10 @@
 <?php include("header.php"); ?>
-
+<?php $id = isset($id)?$id:'';?>
 <head>
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url("public/css/user/home.css") ?>">
 	<script src="<?php echo base_url("public/js/user/home.js") ?>"></script>
-</head>	
+    <script src="<?php echo base_url("public/js/user/home_tour.js") ?>"></script>
+</head>
 
 
 <div class="home">
@@ -79,53 +80,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="tour mountain">
-		<div class="container">
-			<h3 class="qwe">Special package</h3>
-			<hr>
-			<p class="qwe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-			<div class="row">
-	    		<?php 
-	    		    for($i=0;$i<4;$i++){
-	    		 ?>
-				<div class="col-md-3 ">
-					<div class="component">
-						<div class="hover"></div>
-						<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
-						<h4 class="content">AUSTRALIA</h4>
-						<p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-						</p>
-					</div>
-				</div>
-				<?php 
-			    }
-				?>
-			</div>
-	    </div>	
-	</div>
-	<div class="tour sea">
-		<div class="container">
-			<h3 class="qwe">Special package</h3>
-			<hr>
-			<p class="qwe">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-			<div class="row">
-				<?php 
-				    for($i=0;$i<4;$i++){
-				 ?>
-				<div class="col-md-3 ">
-					<div class="component">
-						<div class="hover"></div>
-						<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
-						<h4 class="content">AUSTRALIA</h4>
-						<p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-						</p>
-					</div>
-				</div>
-				<?php 
-			    } 
-			    ?>
-			</div>
-	    </div>
-	</div>
+    <div id="ajax-tour"></div>
 	<?php include("footer.php"); ?>
 </div>
