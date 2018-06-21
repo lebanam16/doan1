@@ -8,10 +8,24 @@ class Order extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('url');
+        $this->load->model("user/M_order");
     }
     public function index()
     {
-        $this->load->view("user/order");
+        $id = $_GET['id'];
+        $query = $this->M_order->get_tour($id);
+        $data['tour']= $query[0];
+        $query = $this->M_order->relate_tour($id);
+        $data['relate'] = $query;
+        $this->load->view("user/order",$data);
+        return true;
+    }
+
+    public function qwe(){
+        $id = $_GET['id'];
+        $query = $this->M_order->relate_tour($id);
+        var_dump($query);
+        return;
     }
 }
 

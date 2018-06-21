@@ -60,12 +60,14 @@
 .home p.qwe {
     text-align: center;
     padding: 20px 0px 25px 0px;
-    width: 33%;
+    width: 40%;
     margin: auto;
+    font-size: 14;
 }
 
 .home h4.content ,.home  p.content {
     text-align: center;
+    font-size: 16px;
 }
 
 .home p.content {
@@ -77,6 +79,7 @@
     position: relative;
     transition: 0.8s;
     margin-bottom: 31px;
+    height: 225px;
 }
 
 .home .component img {

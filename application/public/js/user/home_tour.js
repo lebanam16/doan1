@@ -7,6 +7,9 @@ $(document).ready(function () {
         type    : "POST",
         success : function (result) {
             $("#ajax-tour").html(result);
+            // for(var i=0;i<2;i++){
+            //     $("#ajax-tour").append(result[i]);
+            // }
         }
     });
 });

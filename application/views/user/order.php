@@ -11,7 +11,7 @@ include("header.php");
 		<div class="block row">
 			<div class="col-md-9 detail">
 				<div class="title-block">
-					<a href="">Trang chủ </a><i class="material-icons">keyboard_arrow_right</i><a href=""> Group </a><i class="material-icons">keyboard_arrow_right</i><a href=""> Du lịch quy nhơn</a>
+					<a href=""> <?php echo $tour['ten'];?> </a><i class="material-icons">keyboard_arrow_right</i><a href=""> <?php echo $tour['tieu_de'];?></a>
 				</div>
 				<div class="content">
 					<div class="tour-img">
@@ -31,10 +31,10 @@ include("header.php");
 						</div>
 					</div>
 					<div class="cost">
-						<span class="title">Du lịch Quy Nhơn</span>
-						<span class="info">Ngày khởi hành: 20/6/2018</span>
-						<span class="info">Nơi khởi hành : Hồ Chí Minh</span>
-						<span class="info">Giá : 4 000 000 đ</span>
+						<span class="title"><?php echo $tour['tieu_de'];?></span>
+						<span class="info">Ngày khởi hành: <?php echo $tour['ngay_khoi_hanh'];?></span>
+						<span class="info">Nơi khởi hành : <?php echo $tour['diem_khoi_hanh'];?></span>
+						<span class="info">Giá : <?php echo $tour['gia_nguoi_lon'];?> đ</span>
 						<div>
 							<a href=""><span class="button">Đặt</span></a>
 						</div>
@@ -105,34 +105,20 @@ include("header.php");
 				</div>
 				<div class="col-md-3">
 					<div class="pertain">
-						<div class="component">
-							<div class="hover"></div>
-							<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
-							<a href=""><h4 class="content">AUSTRALIA</h4></a>
-							<p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-							</p>
-						</div>
-						<div class="component">
-							<div class="hover"></div>
-							<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
-							<a href=""><h4 class="content">AUSTRALIA</h4></a>
-							<p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-							</p>
-						</div>
-						<div class="component">
-							<div class="hover"></div>
-							<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
-							<a href=""><h4 class="content">AUSTRALIA</h4></a>
-							<p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-							</p>
-						</div>
-						<div class="component">
-							<div class="hover"></div>
-							<img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
-							<a href=""><h4 class="content">AUSTRALIA</h4></a>
-							<p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-							</p>
-						</div>
+                        <?php
+                        foreach ($relate as $value){
+                        ?>
+                            <a href="">
+                                <div class="component">
+                                    <div class="hover"></div>
+                                    <img class="img-responsive" src="<?php echo base_url("public/img/biennhatrang.jpg"); ?>" alt="">
+                                    <a href=""><h4 class="content"><?php echo $value['tieu_de'] ;?></h4></a>
+                                    <p class="content"></p>
+                                </div>
+                            </a>
+                        <?php
+                        }
+                        ?>
 					</div>
 				</div>
 		    </div>

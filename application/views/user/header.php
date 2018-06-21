@@ -40,7 +40,7 @@
                 </div>
                 <div class="profile">
                     <img class="img-circle" src="<?php echo base_url("public/img/icon/profile.png"); ?>" alt="">
-                    <span class="name"><?php if (isset($_SESSION["name"])) echo $_SESSION["name"]; ?></span>
+                    <span class="name"><?php if (!empty($_SESSION["name"])) echo $_SESSION["name"]; ?></span>
                 </div>
             </div>
             <button class="logout">Log out</button>

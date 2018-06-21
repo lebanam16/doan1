@@ -3,21 +3,22 @@
 
 class M_home extends CI_Model {
 
-    // lay tour
-    public function get_group(){
+    // lay tour theo id nhom
+    public function get_group($id){
         $this->db->select('*');
         $this->db->limit(4);
         $this->db->from('nhom');
-        $this->db->where("nhom.id=1");
+        $this->db->where("nhom.id",$id);
         $this->db->join('tour', 'tour.nhom = nhom.id');
         $query = $this->db->get()->result_array();
         return $query;
     }
 
+    //lay id cac nhom
     public function get_data_table(){
         $this->db->select("id");
         $this->db->limit(2);
-        $query = $this->db->get("nhom");
+        $query = $this->db->get("nhom")->result_array();
         return $query;
     }
 

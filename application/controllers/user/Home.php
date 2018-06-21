@@ -14,18 +14,19 @@ class Home extends CI_Controller {
         $this->load->view("user/home");
     }
 
-    public function ajax_tour(){
-        $data['tour'] = $this->M_home->get_group();
-        $data['tieu_de'] = $data['tour']['0']['ten'];
-        $data['mo_ta'] = $data['tour']['0']['mo_ta'];
-        $html = $this->load->view("user/tour",$data);
+    public function ajax_tour() {
+        $query = $this->M_home->get_data_table();
+        $i = 0;
+        foreach ($query as $value) {
+            $id = $value['id'];
+            $data['tour'] = $this->M_home->get_group($id);
+            $data['tieu_de'] = $data['tour']['0']['ten'];
+            $data['mo_ta'] = $data['tour']['0']['mo_ta'];
+            $html[$i] = $this->load->view("user/tour", $data);
+            $i++;
+        }
         return $html;
     }
-
-
-
-
-
 
 
     public function login() {
@@ -122,8 +123,9 @@ class Home extends CI_Controller {
         return TRUE;
     }
 
-    public function logout(){
+    public function logout() {
         session_destroy();
+        return;
     }
 }
 

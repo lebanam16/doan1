@@ -98,7 +98,8 @@ $(document).ready(function() {
             url     : url,
             type    : "POST",
             success : function () {
-                window.location.reload();
+                //window.location.reload();
+                console.log("dddd");
             }
         });
     })
