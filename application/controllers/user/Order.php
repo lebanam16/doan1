@@ -9,6 +9,9 @@ class Order extends CI_Controller
         parent::__construct();
         $this->load->helper('url');
         $this->load->model("user/M_order");
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
     }
     public function index()
     {
@@ -21,12 +24,6 @@ class Order extends CI_Controller
         return true;
     }
 
-    public function qwe(){
-        $id = $_GET['id'];
-        $query = $this->M_order->relate_tour($id);
-        var_dump($query);
-        return;
-    }
 }
 
 ?>

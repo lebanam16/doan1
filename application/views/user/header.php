@@ -1,5 +1,4 @@
-<?php session_start(); ?>
-
+<html>
 <head>
     <title>
 
@@ -47,3 +46,4 @@
         </div>
     </div>
 </div>
+</html>

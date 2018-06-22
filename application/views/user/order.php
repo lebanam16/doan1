@@ -36,7 +36,7 @@ include("header.php");
 						<span class="info">Nơi khởi hành : <?php echo $tour['diem_khoi_hanh'];?></span>
 						<span class="info">Giá : <?php echo $tour['gia_nguoi_lon'];?> đ</span>
 						<div>
-							<a href=""><span class="button">Đặt</span></a>
+							<a href="http://localhost/doan1/index.php/user/regis?id=<?php echo $_GET['id'];?>"><span class="button">Đặt</span></a>
 						</div>
 					</div>
 				</div>
